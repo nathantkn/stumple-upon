@@ -30,7 +30,7 @@
   display: flex;
   overflow-y: scroll;
   flex-direction: column;
-  align-items: center
+  align-items: center;
 }
 
 .history-sidebar {
@@ -56,22 +56,56 @@ h1 {
   line-height: 1.1
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: .6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
+.button {
+  color: #fff;
+  background-color:black;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px rgb(62, 62, 62);
+}
+
+.button:hover {
   background-color: #1a1a1a;
+}
+
+.button:active {
+  background-color: #0b0b0b;
+  box-shadow: 0 3px #666;
+  transform: translateY(4px);
+}
+
+.release-image-small {
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.album-container {
+  align-items: center;
+}
+
+.track-attributes {
+  margin-top: 10px;
+}
+
+.attribute-button {
+  border: 1px solid;
+  border-radius: 5px;
+  margin-right: 5px;
   cursor: pointer;
-  transition: border-color .25s
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  border-color: #646cff
+.attribute-button:hover {
+  background-color: gray;
 }
 
-button:focus,button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color
+li {
+  list-style: none;
+}
+
+.sideNav .attribute-button {
+  margin-bottom: 10px;
+  margin-right: 40px;
+  display: block;
 }
